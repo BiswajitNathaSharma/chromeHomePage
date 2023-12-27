@@ -33,12 +33,20 @@ body::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, input, select, button, span, a, p {
+h1, h2, h3, h4, select, button, a, p {
   color: rgb(var(--font-color));
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   margin: 0px;
+}
+#apps-container span{
+  color: rgb(var(--font-color));
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px;
+
 }
 
 button, a, input {  
@@ -256,15 +264,17 @@ button, a, input {
 
 #apps-container > a:first-child {
   border-top-left-radius: 0.5rem;
+  color: rgb(255, 102, 0);
+
 }
 
 #apps-container > a:nth-child(2) {  
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   border-top-right-radius: 0.5rem;
 }
 
 #apps-container > a:nth-child(3) {  
-  color: rgb(28, 204, 91);
+  color: rgba(51, 177, 167, 0.571);
 }
 
 #apps-container > a:nth-child(4) {  
@@ -272,7 +282,7 @@ button, a, input {
 }
 
 #apps-container > a:nth-child(5) {  
-  color: rgb(242, 85, 90);
+  color: rgba(253, 47, 47, 0.958);
 }
 
 #apps-container > a:nth-child(7) {  
@@ -280,7 +290,7 @@ button, a, input {
 }
 
 #apps-container > a:last-child {
-  color: rgb(15, 118, 14);
+  color: rgb(4, 255, 0);
   border-bottom-right-radius: 0.5rem; 
 }
 
@@ -1140,10 +1150,11 @@ section{
 .motivation h1{
   font-size: 30px;
   font-weight: 700;
-  color: #43d3ec;
+  color: var(--atom-color-hex);
 }
-.motivation span{
-  font-weight: 400;
+#motivation{
+  color:rgb(144, 143, 143);
+  font-weight: 700;
   line-height: 2;
-  font-size: 15px;
+  font-size: 22px;
 }
